@@ -1,0 +1,93 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.omusiiko.coctaildb"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "androidx.activity:activity-ktx:$activity_version"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    // RxJava 2
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+
+    // RxAndroid 2
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    // Dagger 2
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_compiler_version"
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+
+    // JUnit
+    testImplementation "junit:junit:$junit_version"
+
+    // Lifecycle testing
+    testImplementation "androidx.arch.core:core-testing:$arch_core_testing"
+
+    // Mockito
+    testImplementation "org.mockito:mockito-core:$mockito_core"
+    testImplementation "org.mockito:mockito-inline:$mockito_inline"
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation "com.squareup.okhttp3:okhttp:3.14.9"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.12.1"
+    implementation "com.google.code.gson:gson:2.8.5"
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+}

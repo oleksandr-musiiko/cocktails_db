@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size -->
+    <dimen name="text_size_all_title">20sp</dimen>
+    <dimen name="text_size_all_additional_text">14sp</dimen>
+    <dimen name="text_size_small_text">12sp</dimen>
+
+    <!-- View size -->
+    <dimen name="view_size_medium">70dp</dimen>
+    <dimen name="view_size_xxs_small">1dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_xxl_big">110dp</dimen>
+    <dimen name="padding_xxl_medium">60dp</dimen>
+    <dimen name="padding_m_big">40dp</dimen>
+    <dimen name="padding_m_medium">24dp</dimen>
+    <dimen name="padding_s_big">16dp</dimen>
+    <dimen name="padding_s_medium">12dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_l_medium">32dp</dimen>
+    <dimen name="margin_s_big">16dp</dimen>
+    <dimen name="margin_s_medium">12dp</dimen>
+    <dimen name="margin_s_small">4dp</dimen>
+
+    <!-- ScrollBar size -->
+    <dimen name="scrollbar_drinks_size">18dp</dimen>
+</resources>

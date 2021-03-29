@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CoctailDB</string>
+
+    <!-- Permissions -->
+    <string name="please_give_me_permission">Please, give me permission</string>
+    <string name="application_needs_permissions">Application needs permissions. Please, to grand permissions for INTERNET in this application. If you denied, application will not work correctly</string>
+
+    <string name="android_alert">Android Alert</string>
+    <string name="error_message">An error has occurred: %1$s</string>
+
+    <!-- DrinksFragment -->
+    <string name="drinks_fragment_no_drinks">No Drinks</string>
+    <string name="drinks_fragment_drinks_title">Drinks</string>
+
+    <!-- FiltersFragment -->
+    <string name="filters_fragment_no_filters">No Filters</string>
+    <string name="filters_title">Filters</string>
+    <string name="filters_fragment_apply_button">APPLY</string>
+    <string name="filters_was_update_from_server">filters was update from server</string>
+    <string name="filters_settings_was_update">filters settings was update</string>
+
+</resources>

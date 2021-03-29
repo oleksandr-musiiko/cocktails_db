@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/checkForFiltersFragment">
+
+    <fragment
+        android:id="@+id/checkForFiltersFragment"
+        android:name="com.omusiiko.coctaildb.applicationscreens.fragment.checkforfilters.CheckForFiltersFragment"
+        android:label="checkForFiltersFragment"
+        tools:layout="@layout/fragment_check_for_filters">
+        <action
+            android:id="@+id/action_fragmentCheckForFilters_to_FragmentDrinks"
+            app:destination="@id/fragmentDrinks" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDrinks"
+        android:name="com.omusiiko.coctaildb.applicationscreens.fragment.drinks.DrinksFragment"
+        android:label="fragmentDrinks"
+        tools:layout="@layout/fragment_drinks">
+        <action
+            android:id="@+id/action_fragmentDrinks_to_FragmentFilters"
+            app:destination="@id/fragmentFilters" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFilters"
+        android:name="com.omusiiko.coctaildb.applicationscreens.fragment.filters.FiltersFragment"
+        android:label="fragmentFilters"
+        tools:layout="@layout/fragment_filters" />
+
+</navigation>
+
+
